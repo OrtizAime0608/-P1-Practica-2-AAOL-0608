@@ -8,42 +8,57 @@
 </head>
 <body>
     <h1>Tipos de listas</h1>
+    <!--Esta pagina nos muestra los tipos de lista y nos explica como funciona cada una de ellas-->
+
+
+    <!--Esta lista esta enumerada , dentro de esta se utiliza la etiqueta principal 'ol' , y dentro de ella se ponen los elementos de la lista con el elemento 'il'-->
     <h2>Listas ordenadas</h2>
     <p>Una lista ordenada es una serie de elementos los cuales 
         tendran una numeracion de acuerdo al numeros de elementos.
     </p>
-    <ol>
-        <li>Luna Arias </li>
-        <li>Franco Andrea</li>
-        <li>Granados Evelyn</li>
+    <ol> <!--Lista enumerada -->
+        <li>Luna Arias </li> <!--1er elemento de la lista-->
+        <li>Franco Andrea</li> <!--2do elemento de la lista-->
+        <li>Granados Evelyn</li> <!--3er elemento de la lista-->
     </ol>
+
+
+
+    <!--Esta lista no esta enumerada , se utiliza 'il' de la misma manera , pero en esta se usa 'ul'como etiqueta principal para los elementos-->
     <h2>Listas no ordenadas</h2>
     <p>Las listas no ordenadas no utilizan ninguna numeracion delante 
         de cada item sino un pequeño elemento grafico
     </p>
-    <ul>
-        <li>C</li>
-        <li>C++</li>
-        <li>Python</li>
+    <ul> <!--Lista no enumerada -->
+        <li>C</li> <!--1er elemento de la lista-->
+        <li>C++</li> <!--2do elemento de la lista-->
+        <li>Python</li> <!--3ro elemento de la lista-->
     </ul>
+
+
+
+    <!--Description List / Lista de descripción , esta sirve para conectar un termino con su significado , utiliza 'dl','dt'y 'dd'-->
     <h2>Lista de definiciones</h2>
     <p>Se utiliza para asociar un termino y la definicion del mismo</p>
-    <dl>
-        <!-- Primer termino-->
-        <dt>C++</dt>
+    <dl><!--Etiqueta principal que envuelve la lista-->
+        
+        <!-- Primer termino , nos esta definiendo que es C++-->
+        <dt>C++</dt> <!--Description Term / Término de descripción , este es el termino o concepto que vas a definir-->
+        
         <!-- Definicion del primer termino-->
-        <dd>
+        <dd> <!--Description Details / Detalles o definición , esto contiene la definicion del concepto o termino-->
+            
             Es un lenguaje de programacion, diseñado a mediados de los años
             1980 como extension del lenguaje de programacion C.
         </dd>
-        <!-- Segundo termino-->
+        <!-- Segundo termino , nos define que es Java-->
         <dt>Java</dt>
         <!-- Definicion del segundo termino-->
         <dd>
             Es un lenguaje de programacion orientado a objetos desarrollado
             por Sun Microsystem a principios de los 90.
         </dd>
-        <!-- Tercer termino-->
+        <!-- Tercer termino , nos define que es JavaScript -->
         <dt>JavaScript</dt>
         <!-- Definicion del tercer termino-->
         <dd>
@@ -52,32 +67,43 @@
             al lenguaje de programacion C.
         </dd>
     </dl>
+
+
+
+    <!--Esta es una lista que permite introducir una lista dentro de la otra , en este caso junta una lista ordenada con una no ordenada-->
+    <!--Esta lista nos muestra 1 pais (como elemento de una lista ordenada) y junto con el 3 ciudades (como elementos de la lista desordenada)-->
     <h2>Listas anidadas</h2>
     <p>En HTML nos permite insertar una lista dentro de otra lista, se pueden
         anidar diferentes tipos de lista de acuerdo al requerimiento
     </p>
-    <ol>
-        <li>Argentina
-            <ul>
+    <ol> <!--Crea una lista ordenada-->
+        
+        <li>Argentina <!--1er elemento de la lista ordenada-->
+            
+            <ul> <!--Crea la primera lista desordenada , dentro de la lista ordenada-->
                 <li>Buenos aires</li>
-                <li>La plata</li>
+                <li>La plata</li> <!--Elementos de la lista desordenada-->
                 <li>Mendoza</li>
             </ul>
-        </li>
-        <li>España
-            <ul>
+        </li> <!--Cierra el elemento de la lista ordenada-->
+        
+        <li>España <!--2do elemento de la lista ordenada-->
+            
+            <ul> <!--Crea la segunda lista desordenada , dentro de la lista ordenada-->
                 <li>Barcelona</li>
-                <li>Madrid</li>
+                <li>Madrid</li> <!--Elementos de la lista desordenada-->
                 <li>Sevilla</li>
             </ul>
-        </li>
-        <li>Mexico
-            <ul>
+        </li> <!--Cierra el elemento de la lista ordenada-->
+        
+        <li>Mexico <!--3er elemento de la lista ordenada-->
+            
+            <ul> <!--Crea la segunda lista desordenada , dentro de la lista ordenada-->
                 <li>Chihuahua</li>
-                <li>Cd. Juarez</li>
+                <li>Cd. Juarez</li> <!--Elementos de la lista desordenada-->
                 <li>Hermosillo</li>
             </ul>
-        </li>
-    </ol>
+        </li><!--Cierra el elemento de la lista ordenada-->
+    </ol> <!--Cierra la lista ordenada-->
 </body>
 </html>
