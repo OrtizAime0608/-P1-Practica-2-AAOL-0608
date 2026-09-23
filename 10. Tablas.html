@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<!--Ortiz Lugo Aime Alexandra-->
+<!--0608-->
+
 <html lang="en">
 
 <head>
@@ -7,58 +10,84 @@
     <title>Tablas en HTML</title>
 </head>
 
-<body>
-    <h1>Tipos de tablas</h1>
+<body> <!--Este documento nos muestra las modificaciones que se le pueden hacer a las tablas-->
+    <h1>Tipos de tablas</h1> <!--Es el objetivo de las tablas-->
     <p>El objetivo fundamental de las tablas en HTML sera
         mostrar una serie de datos en forma ordenada,
         organizado en filas y columnas
-    </p>
+    </p> <!--Nos explica los elementos que usamos para crear una tabla-->
     <p>Para la creacion de una tabla intervienen diferentes elementos:</p>
-    <dl>
-        <dt>Table</dt>
-        <dd>
+
+
+
+    
+    <dl> <!--Esta es una lista para mostrarnos los elementos de la tabla utilizando una lista de definiciones-->
+
+        <!--Define para que sirve el elemento table -->
+        <dt>Table</dt> <!--Concepto a definir-->
+        <dd> <!--Definicion del concepto-->
             Es la marca de comienzo de la tabla. Este elemento requiere
             la marca de cierre.
         </dd>
+
+        <!--Define para que sirve el elemento tr-->
         <dt>Tr</dt>
         <dd>
             Es la marca de comienzo de una fila. Esta marca debe estar
             dentro del elemento table
         </dd>
+
+        <!--Define para que sirve el elemento td-->
         <dt>Td</dt>
         <dd>
             Es la marca de comeinzo de una celda. Esta marca debe estar
             dentro del elemento tr
         </dd>
     </dl>
+
+
+
+    <!--Este es un ejemplo de la tabla el cual tiene un borde de un pixel-->
+    <!--Esta tabla nos muestra en la primera celda de la fila una cuidad y en la segunda su población -->
     <h2>Ejemplo</h2>
-    <table border="1">
-        <tr>
-            <td>Ciudad de Mexico</td>
-            <td>9.2 millones</td>
+    <table border="1"> <!--Marca de comienzo de la tabla con borde-->
+        
+        <tr> <!--1ra Fila-->
+            <td>Ciudad de Mexico</td> <!--1ra celda -->
+            <td>9.2 millones</td> <!--2da celda-->
         </tr>
-        <tr>
-            <td>Guadalajara</td>
-            <td>4.1 millones</td>
+        
+        <tr> <!--2da Fila-->
+            <td>Guadalajara</td> <!--1ra celda -->
+            <td>4.1 millones</td> <!--2da celda-->
         </tr>
-        <tr>
-            <td>Monterrey</td>
-            <td>3.9 millones</td>
+        
+        <tr><!--3ra Fila-->
+            <td>Monterrey</td> <!--1ra celda -->
+            <td>3.9 millones</td> <!--2da celda-->
         </tr>
+        
     </table>
+
+
+
+    <!-- Este bloque nos muestra una tabla con un encabezado , donde ademas de mostrarnos los datos , nos indica cual es cada uno-->
+    <!--Nos explica como funciona esta tabla-->
+    <!--Esta tabla nos muestra en la primera celda de la fila una cuidad y en la segunda su población -->
     <h2>Tabla con encabezado</h2>
     <p>La caracteristicas de esta tabla es que se le agrega a las celdas 
         el encabezado correspondiente, esto solo aplicaria a la primera
         fila de la tabla con la etiqueta <em>th</em>, las demas filas
         usarian la etiqueta <em>td</em> con normalidad.
     </p>
-    <table border="1">
-        <tr>
-            <th>Ciudad</th>
-            <th>Cantidad de habitantes</th>
+    <table border="1"> <!--Marca el comienzo de una tabla-->
+        <tr> <!--1ra fila-->
+            <!--Nos muestra celdas de encabezado 'th' , las cuales se vizualizan en negrita y centrado-->
+            <th>Ciudad</th> <!--Es la primera celda del encabezado de la tabla (table header)-->
+            <th>Cantidad de habitantes</th> <!--Segunda celda del encabezado-->
         </tr>
-        <tr>
-            <td>Ciudad de Mexico</td>
+        <tr> <!--2da fila-->
+            <td>Ciudad de Mexico</td> <!--Celda normal-->
             <td>9.2 millones</td>
         </tr>
         <tr>
@@ -70,18 +99,25 @@
             <td>3.9 millones</td>
         </tr>
     </table>
+
+
+
+    <!--Esta ultima tabla , nos muestra como podemos agregarle titulo a la tabla (el titulo se muestra sobre la tabla , no dentro de ella), NO ES LO MISMO QUE CELDAS DE ENCABEZADO-->
+    <!--Explica como agregarlo-->
     <h2>Tabla con titulo</h2>
     <p>Para insertar un titulo a la tabla debemos incorporar el elemento caption 
         inmediatamente despues de abrir la etiqueta <em>table</em>.
     </p>
-    <table border="1">
-        <caption>Poblacion de las ciudades mas concurridas de Mexico</caption>
-        <tr>
-            <th>Ciudad</th>
+    
+    <table border="1"> <!--Marca el comienzo de una tabla-->
+        <caption>Poblacion de las ciudades mas concurridas de Mexico</caption> <!--Es el titulo de la tabla , este aparece en la parte superioir de la tabla , sin estan dentro de ella vizualmente-->
+        <tr> <!--1ra fila-->
+            <th>Ciudad</th> <!-- Celdas de encabezado -->
             <th>Cantidad de habitantes</th>
         </tr>
-        <tr>
-            <td>Ciudad de Mexico</td>
+        
+        <tr><!--2da fila-->
+            <td>Ciudad de Mexico</td> <!--Celdas normales-->
             <td>9.2 millones</td>
         </tr>
         <tr>
